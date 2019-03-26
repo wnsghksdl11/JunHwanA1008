@@ -31,7 +31,7 @@ public class StudyViewController extends HttpServlet {
       //페이지 들어올때 카테넘버를 넘겨줌
       request.setAttribute("cate_no", cate_no);
       //페이지에 뿌려질 목록
-      request.setAttribute("studycate1", studycate1);
+      request.setAttribute("studycate1", studycate2);
       
       //view지정(카테고리 선택 페이지 시작)
       request.getRequestDispatcher("/view/study/searchStudy.jsp").forward(request, response);
